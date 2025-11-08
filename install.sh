@@ -22,8 +22,8 @@ _fetch() {
 }
 
 # Download definitions and packages if missing
-[[ -f definitions.sh ]] || _fetch "https://raw.githubusercontent.com/adityastomar67/Arch-I/master/definitions.sh" definitions.sh
-[[ -f packages.sh ]]    || _fetch "https://raw.githubusercontent.com/adityastomar67/Arch-I/master/packages.sh" packages.sh
+[[ -f definitions.sh ]] || _fetch "https://raw.githubusercontent.com/adityastomar67/arch-installer/refs/heads/main/definitions.sh" definitions.sh
+[[ -f packages.sh ]]    || _fetch "https://raw.githubusercontent.com/adityastomar67/arch-installer/refs/heads/main/packages.sh" packages.sh
 
 # Load functions/variables into current shell for interactive steps
 # definitions.sh should contain color helpers and utility functions; packages.sh the package arrays
